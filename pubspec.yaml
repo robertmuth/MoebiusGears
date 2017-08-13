@@ -1,0 +1,14 @@
+name: moebius_gears
+dependencies:
+  browser: any
+  chronosgl: 3.2.2
+  vector_math: any
+dev_dependencies:
+  hop: '>=0.30.0 <0.31.0'
+  unittest: any
+transformers:
+ - $dart2js:
+     checked: true
+     csp: true
+     verbose: true
+     commandLineOptions: ['--trust-type-annotations', '--trust-primitives']
